@@ -122,7 +122,7 @@ class _SplashScreenState extends State<SplashScreen>
                   height: 20,
                 ),
                 Text(
-                  'Good things come to those who Hustle',
+                  'Good Things Come to those who Hustle',
                   style: TextStyle(
                       color: CupertinoColors.white.withOpacity(.8),
                       fontSize: 20,
