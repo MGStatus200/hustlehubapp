@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:hustlehub/login_screen.dart';
+import 'package:hustlehub/screens/login_screen.dart';
+
 import 'package:hustlehub/shape_image_positioned.dart';
 import 'package:page_transition/page_transition.dart';
 
