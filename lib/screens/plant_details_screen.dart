@@ -119,7 +119,7 @@ class _PlantDetailsState extends State<PlantDetails> {
                           Row(
                             children: [
                               Text(
-                                '₹${widget.plant.plantPrice * quantity}0',
+                                'R${widget.plant.plantPrice * quantity}0',
                                 style: TextStyle(
                                   color: Colors.green.shade600,
                                   fontSize: 18.0,

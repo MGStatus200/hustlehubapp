@@ -42,7 +42,7 @@ class _MainScreenState extends State<MainScreen> {
               child: CircleAvatar(
                 backgroundColor: kDarkGreenColor,
                 radius: 22.0,
-                backgroundImage: const AssetImage('images/Dhairye.jpg'),
+                backgroundImage: const AssetImage('images/hustlehub.png'),
               ),
               onTap: () {},
             ),

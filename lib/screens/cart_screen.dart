@@ -355,7 +355,7 @@ class _CartItemCardState extends State<CartItemCard> {
 
                     // Shows Total Price of the plant according to the quantity
                     Text(
-                      '₹${widget.item.plant.plantPrice * widget.item.quantity}0',
+                      'R${widget.item.plant.plantPrice * widget.item.quantity}0',
                       style: GoogleFonts.poppins(
                         color: Colors.green.shade600,
                         fontWeight: FontWeight.w500,

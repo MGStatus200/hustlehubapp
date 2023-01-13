@@ -35,7 +35,7 @@ class _LoginScreenState extends State<LoginScreen> {
           ClipPath(
             clipper: ImageClipper(),
             child: Image.asset(
-              'images/leaves.jpg',
+              'images/hustlehub.png',
               alignment: Alignment.topCenter,
               fit: BoxFit.fitWidth,
             ),

@@ -5,14 +5,30 @@ import 'package:hustlehub/models/recently_viewed.dart';
 
 List<Plant> recommended = [
   Plant(
-    plantType: 'Indoor',
-    plantName: 'Snake Plant',
+    plantType: 'clothing',
+    plantName: 'Jersey hoodie',
     plantPrice: 80.0,
     stars: 4.0,
     metrics: PlantMetrics('8.2"', '52%', '4.2"'),
-    image: 'images/snake_plant.png',
+    image: 'images/hustlerJerse.jpeg',
   ),
   Plant(
+    plantType: 'clothing',
+    plantName: 'Jersey hoodie',
+    plantPrice: 80.0,
+    stars: 4.0,
+    metrics: PlantMetrics('8.2"', '52%', '4.2"'),
+    image: 'images/hustlerJerse.jpeg',
+  ),
+  Plant(
+    plantType: 'accessories',
+    plantName: 'perfom',
+    plantPrice: 80.0,
+    stars: 4.0,
+    metrics: PlantMetrics('8.2"', '52%', '4.2"'),
+    image: 'images/perfome.jpeg',
+  ),
+  /*Plant(
     plantType: 'Indoor',
     plantName: 'Palm',
     plantPrice: 480.0,
@@ -43,13 +59,13 @@ List<Plant> recommended = [
     stars: 3.5,
     metrics: PlantMetrics('8.2"', '52%', '4.2"'),
     image: 'images/Juniper_Bonsai.png',
-  ),
+  ),*/
 ];
 
 List<ViewHistory> viewed = [
-  ViewHistory('Calathea', 'It\'s spines don\'t grow.', 'images/calathea.jpg'),
-  ViewHistory('Cactus', 'It has spines.', 'images/cactus.jpg'),
-  ViewHistory('Stephine', 'It\'s spines do grow.', 'images/stephine_2.jpg'),
+  //ViewHistory('Calathea', 'It\'s spines don\'t grow.', 'images/calathea.jpg'),
+  //ViewHistory('Cactus', 'It has spines.', 'images/cactus.jpg'),
+  //ViewHistory('Stephine', 'It\'s spines do grow.', 'images/stephine_2.jpg'),
 ];
 
 List<CartItem> cartItems = [

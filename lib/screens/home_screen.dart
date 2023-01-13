@@ -36,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: SizedBox(
                       width: MediaQuery.of(context).size.width * 0.7,
                       child: Text(
-                        'Let\'s find your plants!',
+                        'Let\'s help you find it',
                         textAlign: TextAlign.start,
                         style: GoogleFonts.poppins(
                           color: kDarkGreenColor,
@@ -52,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     decoration: InputDecoration(
                       filled: true,
                       fillColor: kGinColor,
-                      hintText: 'Search Plant',
+                      hintText: 'Search what you\'re looking here ' ,
                       hintStyle: TextStyle(color: kGreyColor),
                       prefixIcon: Icon(
                         Icons.search,
@@ -60,7 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         size: 26.0,
                       ),
                       suffixIcon: IconButton(
-                        icon: const Icon(Icons.mic),
+                        icon: const Icon(Icons.location_on),
                         color: kDarkGreenColor,
                         iconSize: 26.0,
                         splashRadius: 20.0,
@@ -84,10 +84,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   CategorySelector(
                     selected: selected,
                     categories: const [
-                      'Recommended',
-                      'Top',
-                      'Indoor',
-                      'Outdoor'
+                      'Featured',
+                      'Products',
+                      'Services',
+                      'Events'
                     ],
                     onTap: (index) {
                       setState(() {
@@ -344,7 +344,7 @@ class PlantCard extends StatelessWidget {
                       ),
                       constraints: const BoxConstraints(maxWidth: 90.0),
                       child: Text(
-                        '₹${plantPrice}0',
+                        'R${plantPrice}0',
                         overflow: TextOverflow.ellipsis,
                         maxLines: 1,
                         softWrap: false,
