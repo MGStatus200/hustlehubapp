@@ -1,10 +1,10 @@
 
 
-import 'package:hustlehub/models/plant.dart';
+import 'package:hustlehub/models/item.dart';
 
 class CartItem {
-  final Plant plant;
+  final Item Items;
   int quantity;
 
-  CartItem(this.plant, this.quantity);
+  CartItem(this.Items, this.quantity);
 }

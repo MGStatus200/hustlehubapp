@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:hustlehub/components/curve.dart';
 import 'package:hustlehub/constants.dart';
 import 'package:hustlehub/data.dart';
-import 'package:hustlehub/screens/plant_details_screen.dart';
+import 'package:hustlehub/screens/item_details_screen.dart';
 
 
 class HomeScreen extends StatefulWidget {
@@ -122,9 +122,9 @@ class _HomeScreenState extends State<HomeScreen> {
                               },
                               itemBuilder: (context, index) {
                                 return PlantCard(
-                                  plantType: recommended[index].plantType,
-                                  plantName: recommended[index].plantName,
-                                  plantPrice: recommended[index].plantPrice,
+                                  plantType: recommended[index].categoryType,
+                                  plantName: recommended[index].itemName,
+                                  plantPrice: recommended[index].itemPrice,
                                   image: Image.asset(
                                     recommended[index].image,
                                     alignment: Alignment.topLeft,
@@ -166,8 +166,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (context, index) {
                               return RecentlyViewedCard(
-                                plantName: viewed[index].plantName,
-                                plantInfo: viewed[index].plantInfo,
+                                plantName: viewed[index].itemName,
+                                plantInfo: viewed[index].itemInfo,
                                 image: AssetImage(viewed[index].image),
                               );
                             },

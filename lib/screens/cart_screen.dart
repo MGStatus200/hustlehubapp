@@ -23,7 +23,7 @@ class _CartScreenState extends State<CartScreen> {
     subTotal = 0;
     setState(() {
       for (var e in cartItems) {
-        subTotal += e.quantity * e.plant.plantPrice;
+        subTotal += e.quantity * e.Items.itemPrice;
       }
     });
   }
@@ -157,7 +157,7 @@ class _CartScreenState extends State<CartScreen> {
                                 style: kBillTextStyle,
                               ),
                               Text(
-                                '₹${subTotal}0',
+                                'R${subTotal}0',
                                 style: kBillTextStyle,
                               ),
                             ],
@@ -170,7 +170,7 @@ class _CartScreenState extends State<CartScreen> {
                                 style: kBillTextStyle,
                               ),
                               Text(
-                                '₹${shippingCost}0',
+                                'R${shippingCost}0',
                                 style: kBillTextStyle,
                               ),
                             ],
@@ -194,7 +194,7 @@ class _CartScreenState extends State<CartScreen> {
                             ),
                           ),
                           Text(
-                            '₹${subTotal + shippingCost}0',
+                            'R${subTotal + shippingCost}0',
                             style: GoogleFonts.poppins(
                               color: kDarkGreenColor,
                               fontSize: 18.0,
@@ -266,7 +266,7 @@ class _CartItemCardState extends State<CartItemCard> {
               borderRadius: BorderRadius.circular(10.0),
               image: DecorationImage(
                 image: AssetImage(
-                  widget.item.plant.image,
+                  widget.item.Items.image,
                 ),
               ),
             ),
@@ -281,7 +281,7 @@ class _CartItemCardState extends State<CartItemCard> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      widget.item.plant.plantName,
+                      widget.item.Items.itemName,
                       style: GoogleFonts.poppins(
                         color: kDarkGreenColor,
                         fontSize: 16.0,
@@ -355,7 +355,7 @@ class _CartItemCardState extends State<CartItemCard> {
 
                     // Shows Total Price of the plant according to the quantity
                     Text(
-                      'R${widget.item.plant.plantPrice * widget.item.quantity}0',
+                      'R${widget.item.Items.itemPrice * widget.item.quantity}0',
                       style: GoogleFonts.poppins(
                         color: Colors.green.shade600,
                         fontWeight: FontWeight.w500,

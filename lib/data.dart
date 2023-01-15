@@ -1,116 +1,64 @@
 
 import 'package:hustlehub/models/cart_item.dart';
-import 'package:hustlehub/models/plant.dart';
+import 'package:hustlehub/models/item.dart';
 import 'package:hustlehub/models/recently_viewed.dart';
 
-List<Plant> recommended = [
-  Plant(
-    plantType: 'clothing',
-    plantName: 'Jersey hoodie',
-    plantPrice: 80.0,
+List<Item> recommended = [
+  Item(
+    categoryType: 'clothing',
+    itemName: 'Jersey hoodie',
+    itemPrice: 80.0,
     stars: 4.0,
-    metrics: PlantMetrics('8.2"', '52%', '4.2"'),
+    VendorRating: VendorMetrics('105', '97%', '4.4"'),
     image: 'images/hustlerJerse.jpeg',
   ),
-  Plant(
-    plantType: 'clothing',
-    plantName: 'Jersey hoodie',
-    plantPrice: 80.0,
+  Item(
+    categoryType: 'clothing',
+    itemName: 'Jersey hoodie',
+    itemPrice: 80.0,
     stars: 4.0,
-    metrics: PlantMetrics('8.2"', '52%', '4.2"'),
+    VendorRating: VendorMetrics('105', '97%', '4.4"'),
     image: 'images/hustlerJerse.jpeg',
   ),
-  Plant(
-    plantType: 'accessories',
-    plantName: 'perfom',
-    plantPrice: 80.0,
+  Item(
+    categoryType: 'accessories',
+    itemName: 'perfom',
+    itemPrice: 80.0,
     stars: 4.0,
-    metrics: PlantMetrics('8.2"', '52%', '4.2"'),
+    VendorRating: VendorMetrics('105', '97%', '4.4"'),
     image: 'images/perfome.jpeg',
   ),
-  /*Plant(
-    plantType: 'Indoor',
-    plantName: 'Palm',
-    plantPrice: 480.0,
-    stars: 3.5,
-    metrics: PlantMetrics('8.2"', '52%', '4.2"'),
-    image: 'images/Palm.png',
-  ),
-  Plant(
-    plantType: 'Outdoor',
-    plantName: 'Ficus Alli',
-    plantPrice: 600.0,
-    stars: 3.0,
-    metrics: PlantMetrics('8.2"', '52%', '4.2"'),
-    image: 'images/ficuss_alii.png',
-  ),
-  Plant(
-    plantType: 'Outdoor',
-    plantName: 'Money Bonsai',
-    plantPrice: 4000.0,
-    stars: 4.0,
-    metrics: PlantMetrics('8.2"', '52%', '4.2"'),
-    image: 'images/money_bonsai.png',
-  ),
-  Plant(
-    plantType: 'Outdoor',
-    plantName: 'Juniper Bonsai',
-    plantPrice: 2000.0,
-    stars: 3.5,
-    metrics: PlantMetrics('8.2"', '52%', '4.2"'),
-    image: 'images/Juniper_Bonsai.png',
-  ),*/
+
 ];
 
 List<ViewHistory> viewed = [
-  //ViewHistory('Calathea', 'It\'s spines don\'t grow.', 'images/calathea.jpg'),
-  //ViewHistory('Cactus', 'It has spines.', 'images/cactus.jpg'),
-  //ViewHistory('Stephine', 'It\'s spines do grow.', 'images/stephine_2.jpg'),
+  ViewHistory('Beef', 'It\'s Best chisanyam.', 'images/food.jpeg'),
+  ViewHistory('Hoddie', 'Best winter Hoddie.', 'images/perfome.jpeg'),
+
 ];
 
 List<CartItem> cartItems = [
   CartItem(
-    Plant(
-      plantType: 'Indoor',
-      plantName: 'Calathea',
-      plantPrice: 100,
-      image: 'images/calathea.jpg',
+    Item(
+      categoryType: 'Clothing',
+      itemName: 'Jersey',
+      itemPrice: 100,
+      image: 'images/perfome.jpeg',
       stars: 3.5,
-      metrics: PlantMetrics('', '', ''),
+      VendorRating: VendorMetrics('', '', ''),
     ),
     2,
   ),
   CartItem(
-    Plant(
-      plantType: 'Indoor',
-      plantName: 'Cactus',
-      plantPrice: 100,
-      image: 'images/cactus.jpg',
+    Item(
+      categoryType: 'examaple2',
+      itemName: 'examaple2',
+      itemPrice: 100,
+      image: 'images/gardner.jpeg',
       stars: 3.5,
-      metrics: PlantMetrics('', '', ''),
+      VendorRating: VendorMetrics('', '', ''),
     ),
     2,
   ),
-  CartItem(
-    Plant(
-      plantType: 'Indoor',
-      plantName: 'Calathea',
-      plantPrice: 100,
-      image: 'images/calathea.jpg',
-      stars: 3.5,
-      metrics: PlantMetrics('', '', ''),
-    ),
-    2,
-  ),
-  CartItem(
-    Plant(
-      plantType: 'Indoor',
-      plantName: 'Calathea',
-      plantPrice: 100,
-      image: 'images/calathea.jpg',
-      stars: 3.5,
-      metrics: PlantMetrics('', '', ''),
-    ),
-    2,
-  ),
+
 ];

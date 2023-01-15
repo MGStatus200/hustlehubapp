@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hustlehub/constants.dart';
-import 'package:hustlehub/models/plant.dart';
+import 'package:hustlehub/models/item.dart';
 
 class PlantDetails extends StatefulWidget {
   const PlantDetails({required this.plant, Key? key}) : super(key: key);
 
-  final Plant plant;
+  final Item plant;
 
   @override
   State<PlantDetails> createState() => _PlantDetailsState();
@@ -70,7 +70,7 @@ class _PlantDetailsState extends State<PlantDetails> {
             color: kSpiritedGreen,
             padding: const EdgeInsets.only(top: 40.0),
             child: Hero(
-              tag: widget.plant.plantName,
+              tag: widget.plant.itemName,
               child: Image.asset(widget.plant.image),
             ),
           ),
@@ -107,7 +107,7 @@ class _PlantDetailsState extends State<PlantDetails> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            widget.plant.plantName,
+                            widget.plant.itemName,
                             textAlign: TextAlign.start,
                             style: GoogleFonts.poppins(
                               fontSize: 28.0,
@@ -119,7 +119,7 @@ class _PlantDetailsState extends State<PlantDetails> {
                           Row(
                             children: [
                               Text(
-                                'R${widget.plant.plantPrice * quantity}0',
+                                'R${widget.plant.itemPrice * quantity}0',
                                 style: TextStyle(
                                   color: Colors.green.shade600,
                                   fontSize: 18.0,
@@ -165,7 +165,7 @@ class _PlantDetailsState extends State<PlantDetails> {
                           padding:
                               const EdgeInsets.only(top: 10.0, bottom: 20.0),
                           child: Text(
-                            'The snake plant, commonly referred to as mother-in-law\'s tongue, is a resilient succulent that can grow anywhere between 6 inches to several feet. In addition to providing a bit of ambiance, snake plants have a number of health benefits, including: filter indoor air. remove toxic pollutants.',
+                            'The main goal of a Hustle Hub is to provide hustlers with the tools, and support, resources they need to succeed in their chosen field or industry, and to help them overcome any obstacles or challenges they may face along the way.',
                             style: GoogleFonts.poppins(
                               color: kDarkGreenColor,
                             ),
@@ -178,19 +178,19 @@ class _PlantDetailsState extends State<PlantDetails> {
                           child: Row(
                             children: [
                               PlantMetricsWidget(
-                                title: 'Height',
-                                value: widget.plant.metrics.height,
-                                icon: Icons.height,
+                                title: 'Orders',
+                                value: widget.plant.VendorRating.orders,
+                                icon: Icons.receipt_long_outlined,
                               ),
                               PlantMetricsWidget(
-                                title: 'Humidiy',
-                                value: widget.plant.metrics.humidity,
-                                icon: Icons.water_drop_outlined,
+                                title: 'Dropshiping',
+                                value: widget.plant.VendorRating.dropshipping,
+                                icon: Icons.pin_drop_sharp,
                               ),
                               PlantMetricsWidget(
-                                title: 'Width',
-                                value: widget.plant.metrics.width,
-                                icon: Icons.width_full_outlined,
+                                title: 'Ratings',
+                                value: widget.plant.VendorRating.ratings,
+                                icon: Icons.star_rate_outlined,
                               ),
                             ],
                           ),
